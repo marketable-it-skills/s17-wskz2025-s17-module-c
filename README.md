@@ -1,6 +1,6 @@
-# Title of the Project
+# Geek Marketplace REST API
 
-descriptive-title-of-the-project
+A REST API project task for a classifieds geek marketplace with authentication, advert moderation, search filters, and VIP/TOP promotion services.
 
 ## Skill domain(s)
 
@@ -8,12 +8,15 @@ descriptive-title-of-the-project
 
 ## Task Origin
 
-This project task is based on test projects based on the **competition-name** competition **module-name test project** submitted by **name-of-the-test-project-writer(s)**. The original task was updated, modularized, and standardized to form the basis of the project task repository within the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
+This project task is based on the **WorldSkills Kazakhstan National Competition 2025** **Module C test project** submitted by **Aizhan Ziyadanova** and **Denis Popov**. The original task was updated, modularized, and standardized to form the basis of the project task repository within the Erasmus+ **"Marketable IT Skills: Integrating Real-World Challenges into Vocational Education"** project.
 
 ## Content
 
 - [Project Description](project-description.md)
-- [Media Files](tree/main/src/assets)
+- [Assets](assets/)
+- [OpenAPI Specification](assets/swagger/openapi.yaml)
+- [Postman Collection](assets/collection.json)
+- [Marking Scheme](marking/marking-scheme.json)
 
 ## About the Project
 

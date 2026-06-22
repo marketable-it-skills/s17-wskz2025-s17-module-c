@@ -1,1 +1,431 @@
-{}
+{
+  "totalMark": 23,
+  "wsosSections": {
+    "2": "Communication and interpersonal skills",
+    "5": "Back-End Development"
+  },
+  "subCriterions": [
+    {
+      "name": "Deliverables",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Database is created, all tables are present",
+          "maxMark": 0.5,
+          "wsosSection": 2,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Tables were created by migration",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "extraDescription": "Check the code",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Database is in 3rd normal form",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The database dump (DB_DUMP.sql) and the ER diagram (ERD.png) are stored in the database folder of the project",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Route POST /auth/register is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route POST /auth/login is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route POST /auth/logout is implemented according to openapi.yaml",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "A token is used that consists of at least 32 characters",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Passwords are stored in hashed format",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Route GET /user is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route PATCH /user is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route GET /user/adverts is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Users can get a list of their adverts with optional filtering by status",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Route GET /categories is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Adverts",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Route GET /adverts is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Adverts can be filtered by category, price range, and a text search",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The text filter must search through the advert title, body text, category name, and the author's name",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route GET /adverts/{id} is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "A record in the views table is updated or created",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route POST /adverts is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "New advert is created in draft status",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route PATCH /adverts/{id} is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Users can edit only their own adverts in `draft` status",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Moderators can edit any advert",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route POST /adverts/{id}/update-status is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Route DELETE /adverts/{id} is implemented according to openapi.yaml",
+          "maxMark": 1,
+          "wsosSection": 5,
+          "extraDescription": "Deduct 0,25 for each missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Changing the advert status by advert author is only allowed within the following transitions",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "draft - moderation\r\npublished - draft\r\ndeclined - draft\r\npublished - archived\r\ndraft - archived\r\ndeclined - archived",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Changing the advert status by moderator is only allowed within the following transitions",
+          "maxMark": 0.75,
+          "wsosSection": 5,
+          "extraDescription": "moderation - published\r\nmoderation - declined\r\npublished - declined",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advantage Services",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "A table for storing paid services was created",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The table is normalized",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "VIP service can be activated for a single advert for 7 days",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The first 3 positions in the list must display 3 random VIP adverts",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "VIP adverts still appear in the results even if they do not match the search text",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "VIP adverts still appear even if their price is outside the selected range by less than 100",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "TOP service can be activated for a single advert for 3 days",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "A TOP advert is fixed in the first position of the listing (above the VIP block)",
+          "maxMark": 0.25,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "If multiple TOP adverts match the filters, they appear at the top of the list and are sorted among themselves by the time the service was activated (most recent first)",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Design of endpoint to enable paid service",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "judgementScoreDescription": [
+            "not implemented",
+            "method works correctly, but the logic and values are hardcoded",
+            "method is easy to read and understand, payment service logic is placed in separate methods/classes",
+            "a new service or condition can be easily added without total refactoring"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "openapi.yaml is updated and saved in the swagger directory of the project",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "judgementScoreDescription": [
+            "not implemented",
+            "new method with its description mentioned in file",
+            "request and response schema is described, all field types are correct",
+            "new tag added, example data is provided"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Code quality",
+      "aspects": [
+        {
+          "type": "judgement",
+          "description": "Source code quality",
+          "maxMark": 0.5,
+          "wsosSection": 5,
+          "judgementScoreDescription": [
+            "source code was not saved or contains only default files",
+            "the code is readable and understandable, but not sufficiently structured or optimized",
+            "the repeating logic has been extracted into separate methods/classes, and the framework functions have been used appropriately",
+            "the code structure allows making changes to the logic without needing to rewrite a large amount of code, and best practices are used"
+          ]
+        }
+      ]
+    }
+  ]
+}
